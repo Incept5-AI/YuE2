@@ -21,7 +21,7 @@ if let f = args["silence-abc"] {  // parity with tools/silence_vocal.py: one inp
 }
 if let f = args["tag-file"] {
     let art = args["artwork"].flatMap { try? Data(contentsOf: URL(fileURLWithPath: $0)) }
-    try await tagM4A(URL(fileURLWithPath: f), title: args["title"] ?? "Test", genre: "Swing", comment: "test", artwork: art)
+    try await tagM4A(URL(fileURLWithPath: f), title: args["title"] ?? "Test", genre: args["genre"] ?? "Swing", comment: args["comment"] ?? "", artwork: art)
     print("tagged"); exit(0)
 }
 let modelDir = URL(fileURLWithPath: (args["model"]! as NSString).expandingTildeInPath)

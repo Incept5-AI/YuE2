@@ -17,3 +17,4 @@ DerivedData/
 __pycache__/
 .venv/
 .DS_Store
+!samples/**/song.m4a

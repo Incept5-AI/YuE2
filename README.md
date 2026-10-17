@@ -23,6 +23,22 @@ what you give it.
 > **Licence:** the YuE2 weights and the MLX runner this ports are **CC BY-NC 4.0, for non-commercial use only**,
 > and so is this code (see [LICENSE](LICENSE)). The songs you make are subject to the model's licence.
 
+## Samples
+
+Two songs, each made from one prompt by this Swift port (`yue2cli`, 8-bit weights, planning Full) on an M5 Max
+Mac. Same code and same settings as the app; a phone takes about 9 minutes per song. Each folder has the song,
+the style tags and lyrics that went in, and the ABC score the model planned and then sang.
+
+| | Style | Length | Made in | Lyric error | Melody / chord match to its own score |
+|---|---|---|---|---|---|
+| [**Beautiful Evening**](samples/swing/song.m4a) | Big-band swing crooner, the app's default preset (seed 19590) | 3:16 | 98 s | 0.8% | 0.86 / 0.76 |
+| [**Rag It Up**](samples/ragtime-jazz/song.m4a) | Ragtime with modern jazz harmony, female vocal (seed 1921) | 2:48 | 92 s | 0.0% | 0.88 / 0.92 |
+
+GitHub does not play audio inline: open a song and use **View raw** or download it. Both are the better of
+two seeds by lyric error and melody match (scored on a Mac with Qwen3-ASR and SheetSage2), and nothing was
+edited after generation. The ragtime prompt asked for 150 BPM and the planner chose 100, which shows the
+"prompt BPM is ignored" finding below.
+
 ## Quick start
 
 **You need:**
@@ -52,7 +68,7 @@ open YuE2Studio.xcodeproj                                # select your device, t
 
 Then, in the app:
 1. On the **Model** tab, download the 4-bit weights (3.4 GB from Hugging Face). Stay on Wi-Fi with the app open.
-2. On the **Create** tab, press **Generate song**. The Michael Bublé-style swing preset is loaded, so the first
+2. On the **Create** tab, press **Generate song**. The big-band swing crooner preset is loaded, so the first
    press makes a song.
 
 Running Claude Code in this folder? `CLAUDE.md` holds the build, deploy and test commands, and the traps.
@@ -61,8 +77,14 @@ Running Claude Code in this folder? `CLAUDE.md` holds the build, deploy and test
 
 - **17 presets** under "Start from a singer or instrumental". All lyrics are originals; the tags describe a
   sound, not an artist.
-  - **10 singer styles:** Celine-style power ballad, Adele, Ed Sheeran, Michael Bublé, Ella Fitzgerald, 90s rap,
-    Queen, Édith Piaf (French), Helene Fischer (German), and the model card's Mandarin city-pop demo.
+  - **10 singer styles:**
+    - power ballad, soul piano ballad, acoustic pop;
+    - big-band swing crooner (think Michael Bublé, for example);
+    - jazz club ballad, 90s boom-bap rap, arena rock anthem;
+    - French chanson, German Schlager;
+    - the model card's Mandarin city-pop demo.
+
+    The presets carry well-known singers' names only as a shorthand for each style.
   - **7 instrumentals for videos:** lo-fi study beats, cinematic trailer, acoustic vlog, corporate, synthwave,
     tropical house and ambient piano.
 - **Every runner control.** The app exposes:
@@ -86,8 +108,8 @@ Running Claude Code in this folder? `CLAUDE.md` holds the build, deploy and test
 | | Mac M5 Max (`yue2cli`) | iPad Pro M5 (16 GB) | iPhone 18 Pro (12 GB) |
 |---|---|---|---|
 | Memory iOS allows the app | n/a | 5.36 GB without the entitlement, **17.2 GB with it** | 3.53 GB without, **6.43 GB with** |
-| Full Bublé song | 4-bit low-memory: 3:22 of audio in 1:36, peak 4.99 GB | **8-bit: 3:17 in 7:07** (plan 37 s, music 113 s, flow 262 s, decode 16 s), peak 7.1 GB | **4-bit low-memory: 3:24 in 9:14** (plan 35 s, music 115 s, flow 379 s, decode 25 s), peak 4.8 GB, thermal state "fair" at the end |
-| 60 s Bublé, 4-bit | 12 s | 1:48 | |
+| Full swing-crooner song | 4-bit low-memory: 3:22 of audio in 1:36, peak 4.99 GB | **8-bit: 3:17 in 7:07** (plan 37 s, music 113 s, flow 262 s, decode 16 s), peak 7.1 GB | **4-bit low-memory: 3:24 in 9:14** (plan 35 s, music 115 s, flow 379 s, decode 25 s), peak 4.8 GB, thermal state "fair" at the end |
+| 60 s swing-crooner, 4-bit | 12 s | 1:48 | |
 | Lyric word error / melody match / chord match | Celine preset: 0.0% / 0.944 / 0.927 (Python 8-bit: 0.7% / 0.899 / 0.936) | 0.8% / 0.937 / 0.685 | 1.2% / 0.768 / 0.847 |
 | Speed of music-token generation | 224 tok/s (Python MLX: 240) | | |
 
@@ -197,6 +219,7 @@ It has two failure modes:
 | `App/Icon/logo.svg` | Source of the icon |
 | `Config/` | Signing: `Signing.xcconfig` (committed defaults) and your git-ignored `Local.xcconfig` |
 | `project.yml` | XcodeGen spec; `YuE2Studio.xcodeproj` is generated from it |
+| `samples/` | Two example songs with their style, lyrics and planned score |
 | `tools/` | Optional Python references for checking the port on a Mac (`reference.py`, `silence_vocal.py`) |
 
 ## Credits
@@ -207,3 +230,16 @@ It has two failure modes:
 - [ml-explore/mlx-swift](https://github.com/ml-explore/mlx-swift) (MIT).
 - `tools/vendor/abc_tools.py`: the ABC validator from the upstream yue2-music skill (Apache-2.0).
 - Port, app, measurements and presets: [Incept5](https://incept5.ai).
+
+## Disclaimer
+
+This code is published to share the engineering: running a large music model on a phone, and what we measured
+along the way. It is not a guide to imitating or cloning any artist, or to copying other people's work.
+- **Names are shorthand only.** Where a preset names a singer, that is shorthand for a broad genre. The lyrics
+  are original, and the style tags describe instruments, tempo and mood, not a person.
+- **No affiliation.** No artist is involved with this project or endorses it.
+- **Your responsibility.** Respect the rights of musicians, songwriters and labels. Don't use this to pass off
+  generated audio as a real artist's work, to reproduce copyrighted songs or lyrics, or to imitate a living
+  performer's voice.
+- **Non-commercial.** The YuE2 weights, and therefore anything generated with them here, are licensed for
+  non-commercial use only (CC BY-NC 4.0).
