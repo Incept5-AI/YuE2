@@ -1,6 +1,6 @@
 # YuE2 Studio: full songs generated on an iPhone or iPad
 
-*An open-source project from [Incept5 (i5)](https://incept5.ai). More of our open-source AI work: [Incept5/incept5-ai](https://github.com/Incept5/incept5-ai).*
+*An open-source project from [Incept5 (i5)](https://incept5.ai).*
 
 ![YuE2 Studio icon](App/Icon/logo-512.png)
 
