@@ -5,7 +5,7 @@ Licensed under the Creative Commons Attribution-NonCommercial 4.0 International 
 Full text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
 
 You may share and adapt this work for NON-COMMERCIAL purposes, with attribution to Incept5
-(https://incept5.ai, https://github.com/Incept5/yue2).
+(https://incept5.ai, https://github.com/Incept5/YuE2).
 
 Why non-commercial: YuE2Kit is a Swift port of the ahmadw/YuE2-3B-MLX inference code, which is released under
 CC BY-NC 4.0, and it runs the m-a-p/YuE2-3B and YuE2-Vae weights, which are also CC BY-NC 4.0. Those terms apply

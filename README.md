@@ -31,8 +31,8 @@ the style tags and lyrics that went in, and the ABC score the model planned and 
 
 | | Style | Length | Made in | Lyric error | Melody / chord match to its own score |
 |---|---|---|---|---|---|
-| [**▶ Beautiful Evening**](https://incept5.github.io/yue2/samples/swing/song.mp3) | Big-band swing crooner, the app's default preset (seed 19590) | 3:16 | 98 s | 0.8% | 0.86 / 0.76 |
-| [**▶ Rag It Up**](https://incept5.github.io/yue2/samples/ragtime-jazz/song.mp3) | Ragtime with modern jazz harmony, female vocal (seed 1921) | 2:48 | 92 s | 0.0% | 0.88 / 0.92 |
+| [**▶ Beautiful Evening**](https://incept5.github.io/YuE2/samples/swing/song.mp3) | Big-band swing crooner, the app's default preset (seed 19590) | 3:16 | 98 s | 0.8% | 0.86 / 0.76 |
+| [**▶ Rag It Up**](https://incept5.github.io/YuE2/samples/ragtime-jazz/song.mp3) | Ragtime with modern jazz harmony, female vocal (seed 1921) | 2:48 | 92 s | 0.0% | 0.88 / 0.92 |
 
 Full stats (stage timings, memory, tempo, sung range) are in [`samples/README.md`](samples/README.md).
 Click a title to play the MP3 in your browser. Higher-quality AAC versions (`song.m4a`, 256 kbit/s) sit beside each
@@ -62,7 +62,7 @@ edited after generation. The ragtime prompt asked for 150 BPM and the planner ch
 **Steps:**
 
 ```bash
-git clone https://github.com/Incept5/yue2.git && cd yue2
+git clone https://github.com/Incept5/YuE2.git && cd YuE2
 cp Config/Local.xcconfig.example Config/Local.xcconfig   # set DEVELOPMENT_TEAM and a unique BUNDLE_ID_PREFIX
 xcodegen generate                                        # (re)creates YuE2Studio.xcodeproj from project.yml
 open YuE2Studio.xcodeproj                                # select your device, then Run (Release is faster)

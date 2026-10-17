@@ -95,8 +95,8 @@ struct ModelView: View {
                 Section("About") {
                     Text("YuE2 (m-a-p) runs here through MLX on the GPU: score planning, music tokens, 32-step flow matching and the VAE decoder, ported from the Python MLX runner. Lyrics and style help come from Apple's built-in model.")
                         .font(.footnote).foregroundStyle(.secondary)
-                    Link("Open source from Incept5 (i5): github.com/Incept5/yue2",
-                         destination: URL(string: "https://github.com/Incept5/yue2")!)
+                    Link("Open source from Incept5 (i5): github.com/Incept5/YuE2",
+                         destination: URL(string: "https://github.com/Incept5/YuE2")!)
                         .font(.footnote)
                     Text("YuE2 weights: CC BY-NC 4.0, non-commercial use only.")
                         .font(.footnote).foregroundStyle(.secondary)
