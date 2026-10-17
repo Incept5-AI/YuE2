@@ -5,7 +5,10 @@ Apple M5 Max Mac with the 8-bit weights, planning Full, 32 flow steps, CFG auto.
 generation. Each was the better of two seeds by lyric error and melody match. All numbers are n=1; the full
 set is in each folder's `stats.json`.
 
-| | [Beautiful Evening](swing/song.m4a) | [Rag It Up](ragtime-jazz/song.m4a) |
+Click a title to play it in the browser (MP3, VBR ~230 kbit/s). Each folder also has `song.m4a` (AAC 256 kbit/s,
+with title and cover art) for downloading.
+
+| | [▶ Beautiful Evening](https://incept5.github.io/incept5-ai/YuE2/samples/swing/song.mp3) | [▶ Rag It Up](https://incept5.github.io/incept5-ai/YuE2/samples/ragtime-jazz/song.mp3) |
 |---|---|---|
 | Style | Big-band swing crooner, male vocal (the app's default preset) | Ragtime with modern jazz harmony, female vocal |
 | Seed | 19590 | 1921 |
