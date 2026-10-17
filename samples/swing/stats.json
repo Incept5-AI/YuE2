@@ -1,0 +1,42 @@
+{
+ "title": "Beautiful Evening",
+ "seed": 19590,
+ "runner": "yue2cli (YuE2Kit Swift/MLX port, mlx-swift 0.32.3)",
+ "machine": "Apple M5 Max, 128 GB, macOS",
+ "weights": "ahmadw/YuE2-3B-MLX 8bit",
+ "planning": "full",
+ "flow_steps": 32,
+ "cfg": "auto",
+ "max_music_tokens": 7500,
+ "audio_seconds": 196.0,
+ "music_tokens": 4900,
+ "stage_seconds": {
+  "plan": 13.7,
+  "semantic": 31.7,
+  "acoustic": 48.1,
+  "decode": 4.7
+ },
+ "total_seconds": 98.2,
+ "peak_memory_gb": 7.69,
+ "stage_peak_gb": {
+  "decode": 7.69,
+  "acoustic": 6.15,
+  "semantic": 6.38,
+  "plan": 5.5
+ },
+ "planned_tempo_bpm": 120,
+ "planned_key": "Bb",
+ "lyric_word_error": 0.008,
+ "melody_match": 0.857,
+ "chord_match": 0.764,
+ "scored_with": "Mel-RoFormer vocal stem, Qwen3-ASR-1.7B (lyrics), SheetSage2 (melody/chords vs the planned score); chance melody match ~0.30",
+ "sung_pitch": {
+  "median": "B3",
+  "range_p10_p90": [
+   "F3",
+   "D4"
+  ],
+  "top": "G4",
+  "octaves_vs_score": -0.91
+ }
+}

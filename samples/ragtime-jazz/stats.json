@@ -1,0 +1,42 @@
+{
+ "title": "Rag It Up",
+ "seed": 1921,
+ "runner": "yue2cli (YuE2Kit Swift/MLX port, mlx-swift 0.32.3)",
+ "machine": "Apple M5 Max, 128 GB, macOS",
+ "weights": "ahmadw/YuE2-3B-MLX 8bit",
+ "planning": "full",
+ "flow_steps": 32,
+ "cfg": "auto",
+ "max_music_tokens": 7500,
+ "audio_seconds": 168.2,
+ "music_tokens": 4205,
+ "stage_seconds": {
+  "plan": 15.7,
+  "semantic": 28.6,
+  "acoustic": 43.9,
+  "decode": 3.2
+ },
+ "total_seconds": 91.4,
+ "peak_memory_gb": 7.68,
+ "stage_peak_gb": {
+  "plan": 5.51,
+  "semantic": 6.38,
+  "decode": 7.68,
+  "acoustic": 6.16
+ },
+ "planned_tempo_bpm": 100,
+ "planned_key": "Bb",
+ "lyric_word_error": 0.0,
+ "melody_match": 0.879,
+ "chord_match": 0.924,
+ "scored_with": "Mel-RoFormer vocal stem, Qwen3-ASR-1.7B (lyrics), SheetSage2 (melody/chords vs the planned score); chance melody match ~0.30",
+ "sung_pitch": {
+  "median": "F4",
+  "range_p10_p90": [
+   "Bb3",
+   "Bb4"
+  ],
+  "top": "Eb5",
+  "octaves_vs_score": -1.01
+ }
+}

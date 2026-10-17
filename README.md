@@ -34,6 +34,7 @@ the style tags and lyrics that went in, and the ABC score the model planned and 
 | [**Beautiful Evening**](samples/swing/song.m4a) | Big-band swing crooner, the app's default preset (seed 19590) | 3:16 | 98 s | 0.8% | 0.86 / 0.76 |
 | [**Rag It Up**](samples/ragtime-jazz/song.m4a) | Ragtime with modern jazz harmony, female vocal (seed 1921) | 2:48 | 92 s | 0.0% | 0.88 / 0.92 |
 
+Full stats (stage timings, memory, tempo, sung range) are in [`samples/README.md`](samples/README.md).
 GitHub does not play audio inline: open a song and use **View raw** or download it. Both are the better of
 two seeds by lyric error and melody match (scored on a Mac with Qwen3-ASR and SheetSage2), and nothing was
 edited after generation. The ragtime prompt asked for 150 BPM and the planner chose 100, which shows the
