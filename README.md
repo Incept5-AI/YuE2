@@ -245,3 +245,20 @@ along the way. It is not a guide to imitating or cloning any artist, or to copyi
   performer's voice.
 - **Non-commercial.** The YuE2 weights, and therefore anything generated with them here, are licensed for
   non-commercial use only (CC BY-NC 4.0).
+- **EU AI Act: label what you publish.** YuE2 Studio is an AI system that generates synthetic audio. Article 50
+  of the EU AI Act (Regulation (EU) 2024/1689) is the transparency article, and it has applied since 2 August
+  2026. It covers two things:
+  - **Marking.** Providers of systems that generate synthetic audio must mark the output, in a machine-readable
+    way, as AI-generated.
+  - **Disclosure.** Anyone who publishes AI-generated content that resembles a real person, such as a voice
+    that sounds like an existing singer, must disclose that it is artificial.
+
+  What this project does about it:
+  - Every m4a the app saves, and every file in `samples/`, says "AI-generated" in its metadata comment.
+  - WAV and `.abc` exports carry no marker, and metadata is easy to strip, so this is a label, not a watermark.
+
+  If you build on this code, distribute an app made from it, or publish its songs where EU law applies, you are
+  responsible for meeting Article 50 yourself. In practice, say clearly that the music is AI-generated wherever
+  you post it, and never present it as the work or voice of a real artist. Implementation dates and transition
+  periods have been adjusted by later EU acts (the 2026 "Digital Omnibus"), so check the current text and the
+  Commission's Article 50 guidelines. This is not legal advice.

@@ -248,7 +248,7 @@ final class Studio {
                 let genre = req.style.split(separator: ",").dropFirst(YuE2Kit.isInstrumental(req.style) ? 0 : 1).first.map { $0.trimmingCharacters(in: .whitespaces).capitalized }
                 let art = Bundle.main.url(forResource: "artwork", withExtension: "png").flatMap { try? Data(contentsOf: $0) }
                 try? await tagM4A(folder.appending(path: "song.m4a"), title: Self.prettyTitle(songName), genre: genre,
-                                  comment: "Seed \(req.seed) · \(req.style)", artwork: art)
+                                  comment: "AI-generated with YuE2 Studio (YuE2-3B). Seed \(req.seed) · \(req.style)", artwork: art)
                 try writeWAV(res.audio, to: folder.appending(path: "song.wav"))
                 if let abc = res.abc { try abc.write(to: folder.appending(path: "score.abc"), atomically: true, encoding: .utf8) }
                 let enc = JSONEncoder(); enc.outputFormatting = [.prettyPrinted, .sortedKeys]
