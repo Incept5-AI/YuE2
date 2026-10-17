@@ -1,0 +1,19 @@
+# Your signing details
+Config/Local.xcconfig
+# Build output
+build/
+DerivedData/
+.build/
+.swiftpm/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+# Renders, weights and scratch
+*.wav
+*.m4a
+*.safetensors
+*.abc.swift-silenced
+*.abc.py-silenced
+__pycache__/
+.venv/
+.DS_Store

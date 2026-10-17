@@ -1,0 +1,45 @@
+name: YuE2Studio
+options:
+  deploymentTarget:
+    iOS: "27.0"
+  xcodeVersion: "27.0"
+
+packages:
+  YuE2Kit:
+    path: YuE2Kit
+
+targets:
+  YuE2Studio:
+    type: application
+    platform: iOS
+    sources:
+      - App/Sources
+      - path: App/Resources
+        buildPhase: resources
+    configFiles:
+      Debug: Config/Signing.xcconfig
+      Release: Config/Signing.xcconfig
+    settings:
+      base:
+        # DEVELOPMENT_TEAM and BUNDLE_ID_PREFIX come from Config/Signing.xcconfig (+ your Config/Local.xcconfig).
+        # Do not set them here: values in this file override the xcconfig.
+        PRODUCT_BUNDLE_IDENTIFIER: $(BUNDLE_ID_PREFIX).yue2studio
+        # increased-memory-limit is required: without it iOS caps the app at ~3.5 GB on a 12 GB iPhone and kills
+        # it while loading the weights. Needs a paid developer team and automatic signing (-allowProvisioningUpdates).
+        CODE_SIGN_ENTITLEMENTS: App/YuE2Studio.entitlements
+        CODE_SIGN_STYLE: Automatic
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: YuE2 Studio
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_UILaunchScreen_Generation: true
+        INFOPLIST_KEY_UIFileSharingEnabled: YES
+        INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "5.9"
+    dependencies:
+      - package: YuE2Kit
+        product: YuE2Kit

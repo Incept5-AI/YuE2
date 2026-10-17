@@ -1,0 +1,7 @@
+// Committed defaults. Put your own values in Config/Local.xcconfig (git-ignored; copy Local.xcconfig.example).
+// Your Apple Developer team ID: Xcode > Settings > Accounts, or developer.apple.com > Membership.
+DEVELOPMENT_TEAM =
+// Must be unique to you: Apple will not let two teams register the same bundle id.
+BUNDLE_ID_PREFIX = com.example
+
+#include? "Local.xcconfig"

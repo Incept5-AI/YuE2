@@ -1,0 +1,5 @@
+# Only needed for the optional Mac parity checks in tools/ (the app and yue2cli need none of this).
+mlx==0.32.3
+numpy
+tiktoken
+huggingface_hub

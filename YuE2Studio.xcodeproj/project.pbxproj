@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F5DF8487C31FD5EDB8DB3CF /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7876CDC23AE9AB0DA1292 /* LibraryView.swift */; };
+		131E24E9A27EA404754C5A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8480D3D86CFAF8CDA84DCFC8 /* Assets.xcassets */; };
+		1CB1BA42327E41DCD7BE3C52 /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A706165F0BAD9091E74D45D /* Assistant.swift */; };
+		23A96AC4D4053200D84D08C1 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7A5E8B0F71DE389CB2F23 /* CreateView.swift */; };
+		40E8C6EDB6309F2B3E9E5D02 /* YuE2Kit in Frameworks */ = {isa = PBXBuildFile; productRef = 1507DAED6CF0AB044E56FE8F /* YuE2Kit */; };
+		7209BB47F18083B59531B737 /* AISheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0EB1D13DF1007FFDF6A7A5 /* AISheet.swift */; };
+		74F01828ACCAA593D3B38761 /* artwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE38BBDDC3AD457FF436A3D /* artwork.png */; };
+		78F0E6EDB18C49CD6D91727A /* ModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649999A2A90B736D24457BAA /* ModelStore.swift */; };
+		8FF848E5506F4B74892BEF46 /* YuE2StudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC8156CCF4554BAD30B8686 /* YuE2StudioApp.swift */; };
+		C3C4D333DDE2145FA40B6230 /* presets.json in Resources */ = {isa = PBXBuildFile; fileRef = 6707D729BBB95A98B1E4B505 /* presets.json */; };
+		D2AAA85C520BF8975C7BA957 /* Studio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E675A8E30259D86A35E50C3F /* Studio.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A706165F0BAD9091E74D45D /* Assistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
+		5CC8156CCF4554BAD30B8686 /* YuE2StudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuE2StudioApp.swift; sourceTree = "<group>"; };
+		649999A2A90B736D24457BAA /* ModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStore.swift; sourceTree = "<group>"; };
+		6707D729BBB95A98B1E4B505 /* presets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = presets.json; sourceTree = "<group>"; };
+		8480D3D86CFAF8CDA84DCFC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C0EB1D13DF1007FFDF6A7A5 /* AISheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISheet.swift; sourceTree = "<group>"; };
+		8EE38BBDDC3AD457FF436A3D /* artwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artwork.png; sourceTree = "<group>"; };
+		93569454B5C2C00A11C697BA /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		B5F7A5E8B0F71DE389CB2F23 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		BA253752F09C9B6F7BE4D854 /* YuE2Kit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = YuE2Kit; path = YuE2Kit; sourceTree = SOURCE_ROOT; };
+		DC8D055935EBCAF8122EB5B8 /* YuE2Studio.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = YuE2Studio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE7876CDC23AE9AB0DA1292 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		E675A8E30259D86A35E50C3F /* Studio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studio.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1DD8204F8F7974C38D224B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E8C6EDB6309F2B3E9E5D02 /* YuE2Kit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A49A17128DDFA181B7B6A3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8EE38BBDDC3AD457FF436A3D /* artwork.png */,
+				8480D3D86CFAF8CDA84DCFC8 /* Assets.xcassets */,
+				6707D729BBB95A98B1E4B505 /* presets.json */,
+			);
+			name = Resources;
+			path = App/Resources;
+			sourceTree = "<group>";
+		};
+		2DB10329F990A71CEB77A6F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D055935EBCAF8122EB5B8 /* YuE2Studio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FDB48B59D23442A1FD350C7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8C0EB1D13DF1007FFDF6A7A5 /* AISheet.swift */,
+				4A706165F0BAD9091E74D45D /* Assistant.swift */,
+				B5F7A5E8B0F71DE389CB2F23 /* CreateView.swift */,
+				DEE7876CDC23AE9AB0DA1292 /* LibraryView.swift */,
+				649999A2A90B736D24457BAA /* ModelStore.swift */,
+				E675A8E30259D86A35E50C3F /* Studio.swift */,
+				5CC8156CCF4554BAD30B8686 /* YuE2StudioApp.swift */,
+			);
+			name = Sources;
+			path = App/Sources;
+			sourceTree = "<group>";
+		};
+		6BCF1695B52D5C8FA689D427 = {
+			isa = PBXGroup;
+			children = (
+				D856674BF571A6CB9EBF328C /* Config */,
+				6D12ADBBC24C4FD8200A5791 /* Packages */,
+				2A49A17128DDFA181B7B6A3D /* Resources */,
+				2FDB48B59D23442A1FD350C7 /* Sources */,
+				2DB10329F990A71CEB77A6F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D12ADBBC24C4FD8200A5791 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				BA253752F09C9B6F7BE4D854 /* YuE2Kit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		D856674BF571A6CB9EBF328C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				93569454B5C2C00A11C697BA /* Signing.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F68EAC2662C87D8E0492B39F /* YuE2Studio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3257D8FC50D7F8DE6497D3B1 /* Build configuration list for PBXNativeTarget "YuE2Studio" */;
+			buildPhases = (
+				7AB0E5EFAC0344E0D5B86325 /* Sources */,
+				5539EE2CEBB38D14B6712800 /* Resources */,
+				D1DD8204F8F7974C38D224B9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YuE2Studio;
+			packageProductDependencies = (
+				1507DAED6CF0AB044E56FE8F /* YuE2Kit */,
+			);
+			productName = YuE2Studio;
+			productReference = DC8D055935EBCAF8122EB5B8 /* YuE2Studio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		396DBBADA9BE1F119141D206 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					F68EAC2662C87D8E0492B39F = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B37F14F521919BA5F0BB0FDC /* Build configuration list for PBXProject "YuE2Studio" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6BCF1695B52D5C8FA689D427;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A81A28F96CF8641EDB742E1C /* XCLocalSwiftPackageReference "YuE2Kit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2DB10329F990A71CEB77A6F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F68EAC2662C87D8E0492B39F /* YuE2Studio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5539EE2CEBB38D14B6712800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				131E24E9A27EA404754C5A71 /* Assets.xcassets in Resources */,
+				74F01828ACCAA593D3B38761 /* artwork.png in Resources */,
+				C3C4D333DDE2145FA40B6230 /* presets.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AB0E5EFAC0344E0D5B86325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7209BB47F18083B59531B737 /* AISheet.swift in Sources */,
+				1CB1BA42327E41DCD7BE3C52 /* Assistant.swift in Sources */,
+				23A96AC4D4053200D84D08C1 /* CreateView.swift in Sources */,
+				0F5DF8487C31FD5EDB8DB3CF /* LibraryView.swift in Sources */,
+				78F0E6EDB18C49CD6D91727A /* ModelStore.swift in Sources */,
+				D2AAA85C520BF8975C7BA957 /* Studio.swift in Sources */,
+				8FF848E5506F4B74892BEF46 /* YuE2StudioApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1CCEA45332ACFB6A4A56D372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93569454B5C2C00A11C697BA /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/YuE2Studio.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "YuE2 Studio";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIFileSharingEnabled = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).yue2studio";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45E6049DE4F29C977ADFB1F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DB818C9DBEBFC6CA3B149663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93569454B5C2C00A11C697BA /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/YuE2Studio.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "YuE2 Studio";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIFileSharingEnabled = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).yue2studio";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFF1AB1825C492586B71DF89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3257D8FC50D7F8DE6497D3B1 /* Build configuration list for PBXNativeTarget "YuE2Studio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CCEA45332ACFB6A4A56D372 /* Debug */,
+				DB818C9DBEBFC6CA3B149663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B37F14F521919BA5F0BB0FDC /* Build configuration list for PBXProject "YuE2Studio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E6049DE4F29C977ADFB1F5 /* Debug */,
+				DFF1AB1825C492586B71DF89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A81A28F96CF8641EDB742E1C /* XCLocalSwiftPackageReference "YuE2Kit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = YuE2Kit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1507DAED6CF0AB044E56FE8F /* YuE2Kit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YuE2Kit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 396DBBADA9BE1F119141D206 /* Project object */;
+}
