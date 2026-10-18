@@ -1,7 +1,8 @@
 # CLAUDE.md
 
 Guidance for Claude Code in this repo: YuE2-3B song generation running natively on iPhone and iPad (Swift + MLX).
-This is an [Incept5 (i5)](https://incept5.ai) open-source project: `github.com/Incept5/YuE2`. `README.md` has what the
+This is an [Incept5 (i5)](https://incept5.ai) open-source project: `github.com/Incept5-AI/YuE2`, one
+repo in the [Incept5-AI](https://github.com/Incept5-AI) collection (the org profile lists the others). `README.md` has what the
 app does, the measurements and the musical findings. This file covers building, testing and the traps.
 
 ## First run for a new user (do these in order)
@@ -164,5 +165,5 @@ score.abc, request.json, result.json).
 - Keep the Swift and Python `silenceVocal` byte-identical. Change both, then run the parity check.
 - Numbers in README are n=1 unless stated otherwise; say so when you add one. Date the findings you add.
 - Never commit weights, renders (`*.wav`, `*.m4a`), `build/`, `Config/Local.xcconfig`, a team ID, or device UDIDs.
-- GitHub Pages serves this repo as-is (`.nojekyll`, `main`, root) at https://incept5.github.io/YuE2/. GitHub's own
+- GitHub Pages serves this repo as-is (`.nojekyll`, `main`, root) at https://incept5-ai.github.io/YuE2/. GitHub's own
   file view forces a download for audio, so link samples to the Pages URL so they play in the browser.
